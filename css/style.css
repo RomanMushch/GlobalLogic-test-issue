@@ -1,0 +1,327 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 22px;
+	font-style: italic;
+}
+/*top*/
+	.top-section {
+		height: 100%;
+		background-image: url(../img/bg.png);
+		background-size: cover;
+		color: #fff;
+		text-align: center;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap; 
+	}
+	.top-section nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: baseline;
+		width: 94%;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+		.left-side {
+			display: flex;
+			justify-content: flex-start;
+			padding-left: 100px;
+		}
+		.right-side {
+			display: flex;
+			justify-content: flex-end;
+		}
+		.right-side a{
+			color: #fff;
+			text-decoration: none;
+		}
+		.my-name {
+			margin: 0 auto;
+		}
+	.top-section h1,
+	.top-section h3 {
+		text-transform: uppercase;
+		margin: 0;
+	}
+	.top-section h3 {
+		font-style: italic;
+		font-weight: 100;
+	}
+	.logo {
+	  font-size: 30px;
+	  font-family: "Tahoma";
+	}
+	.menu {
+	  font-size: 20px;
+	  width: 80px;
+	  font-weight:500; 
+	  padding: 10px 10px 12px 10px;
+	}
+	.menu:hover {
+		padding-bottom: 10px;
+		border-bottom: 2px solid #fff;
+	}
+/*about section*/
+	.about-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		margin: 0 auto;
+		font-size: 16px;
+		height: auto;
+		border-bottom: 1px solid #ccc;
+	}
+	.about-section h3 {
+		position: absolute;
+		top: 0;
+		padding: 10px 0 10px 0;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	.goals{
+		text-align: right;
+		padding-top: 80px;
+		padding-left: 15%;
+		padding-bottom: 80px;
+	}
+	.snowman-item {
+		width: 150%;
+		margin: 0 20px;
+		background-image: url(../img/avatar.png);
+		background-size: contain;
+		background-position: 50% 60%;
+		background-repeat: no-repeat;
+	}
+	.dreams{
+		text-align: left;
+		padding-top: 80px;
+		padding-right: 15%;
+		padding-bottom: 80px;
+	}
+
+/*skills section*/
+	.skills-section {
+		text-align: right;
+		position: relative;
+		margin: 0 auto;
+		font-size: 16px;
+		height: auto;
+		padding-bottom: 100px;
+		border-bottom: 1px solid #ccc;
+	}
+	.skills-section .skills-top-name {
+		padding: 10px 0 10px 0;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		text-align: center;
+	}
+	.dot {
+	    height: 20px;
+	    width: 20px;
+	    border-radius: 50%;
+	    display: inline-block;
+	    margin-right: 5px;
+	}
+	.dot-empty {
+		background-color: #bbb;
+	}
+	.dot-full {
+		background-color: #333;
+	}
+	.skills-section div p {
+		font-size: 30px;
+		font-weight: 700;
+		margin: 0 auto;
+		color: #333;
+		padding-right: 100px;
+		letter-spacing: 2px;
+	}
+	.skills-name div{
+		display: inline-block;
+
+	}
+	.skills-name {
+		width: 600px;
+		margin: 0 auto;
+	}
+
+/*contact section*/
+	.contact-section {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		text-align: center;
+		position: relative;
+		margin: 0 auto;
+		font-size: 16px;
+		height: 470px;
+		margin-bottom: 15px;
+	}
+	.contact-section h3 {
+		position: absolute;
+		top: 0;
+		padding: 10px 0 10px 0;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	.my-contacts,
+	.contact-with-me {
+		padding-top: 100px;
+		padding-left:  50px;
+		text-align: left;
+	}
+	.contact-info {
+		color: #aaa;
+	}
+	form {
+	    width: 80%;
+	    margin: 0 auto;
+	    padding-top: 20px;
+	    background-color: #fff;
+	}
+	input,
+	textarea {
+	    width: 95%;
+	    margin: 0 0 20px 0;
+	    padding: 2px 5px;
+	    border: 1px solid #999;
+	    vertical-align: middle;
+	}
+	input {
+	    height: 35px;
+	}
+	.button {
+	    margin-top: 10px;
+	    text-align: center;
+	}
+	input[type="submit"]{
+		width: 45%;
+	    height: auto;
+	    margin: 0 auto;
+	    padding: 6px 0;
+		background-color: #333;
+		color: #fff;
+		display: inline-block;
+		font-family:'Open Sans', sans-serif;
+		font-weight: 600;
+	}
+	input[placeholder],
+	textarea[placeholder] {
+		font-family:'Open Sans', sans-serif;
+		font-size: 16px;
+	}
+/*footer*/
+	.footer-section {
+		height: 190px;
+		background-color: #333;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		padding: 0 160px;
+	}
+	.footer-contact {
+		display: flex;
+		padding: 20px 0 30px;
+	}
+	.footer-contact .name {
+		font-weight: 800;
+		letter-spacing: 2px;
+	}
+	.footer-contact .info {
+		padding-left: 5px;
+	}
+	.footer-logo {
+		padding-top: 40px;
+
+	}
+
+@media all and (max-width: 600px){
+	.skills-name {
+		width: 400px;
+		margin: 0 auto;
+	}
+	.skills-section div p {
+		font-size: 20px;
+		padding-right: 10px;
+	}
+	.about-section {
+		font-size: 10px;
+	}
+	.goals, 
+	.dreams {
+		padding-left: 0;
+		padding-right: 0;
+	} 
+	.dot {
+		width: 15px;
+		height: 15px;
+	}
+	.left-side {
+			padding-left: 20px;
+	}
+
+	.logo {
+	  font-size: 20px;
+	  font-family: "Tahoma";
+	}
+	.menu {
+	  font-size: 16px;
+	  width: auto; 
+	  padding: 10px 10px 12px 10px;
+	}
+	h1 {
+		font-size: 30px;
+		letter-spacing: 0;
+	}
+	h3 {
+		font-size: 15px;
+	}
+	h4 {
+		font-size: 11px;
+	}
+	.footer-section {
+		padding: 0 10px;
+	}
+	.contact-with-me {
+		padding-left: 10px;
+	}
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: local("Tahoma"), local("TahomaRegular"),
+         url('../fonts/Tahoma-Regular/Tahoma-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Connect font "Tahoma-Bold"; */
+@font-face {
+   font-family: 'Tahoma';
+    src: local("Tahoma"), local("TahomaBold"),
+    	 url('../fonts/Tahoma-Bold/Tahoma-Bold.eot'),
+    	 url('../fonts/Tahoma-Bold/Tahoma-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Tahoma-Bold/Tahoma-Bold.woff') format('woff'),
+         url('../fonts/Tahoma-Bold/Tahoma-Bold.ttf') format('truetype'),
+         url('../fonts/Tahoma-Bold/Tahoma-Bold.svg#Tahoma-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}

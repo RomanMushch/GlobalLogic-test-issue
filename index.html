@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roman Mushchynsyi</title>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+<section class="top-section" id="Home">
+	<nav>
+		<div class="left-side">
+			<div class="navbar logo"><i class="fa fa-code" aria-hidden="true"></i></div>
+		</div>
+		<div class="right-side">
+			<a href="#Home"><div class="menu" >Home</div></a>
+			<a href="#About"><div class="menu" >About</div></a>
+			<a href="#Skills"><div class="menu" >Skills</div></a>
+			<a href="#Contact"><div class="menu" >Contact</div></a>
+		</div>
+	</nav>
+	<div class="my-name">
+		<h1>Roman Mushchynskyi</h1>
+		<h3>Front-end developer</h3>
+	</div>
+</section>
+<section class="about-section" id="About">
+	<h3>About</h3>
+	<div class="goals">
+		<h4>Goals</h4>
+		<p>Lorem ipsum dolor sit amet, ac erat dolor quisque magna consectetur leo, pede nec phasellus praesent adipiscing. Nullam diam magna at mauris amet, non ut urna a commodo. Donec vivamus semper nisi velit, proin id turpis, vehicula amet nullam convallis adipiscing ut sit, sit viverra. Duis interdum eu eu sodales nec ut, non nibh accumsan eleifend. Purus ut vitae sapien dui duis dolores, porttitor tempus nascetur id ut, integer ut dignissim harum.</p>
+	</div>
+	<div class="snowman-item">
+	<p></p>
+	</div>
+	<div class="dreams">
+		<h4>Dreams</h4>
+		<p>Lorem ipsum dolor sit amet, ac erat dolor quisque magna consectetur leo, pede nec phasellus praesent adipiscing. Nullam diam magna at mauris amet, non ut urna a commodo. Donec vivamus semper nisi velit, proin id turpis, vehicula amet nullam convallis adipiscing ut sit, sit viverra. Duis interdum eu eu sodales nec ut, non nibh accumsan eleifend. Purus ut vitae sapien dui duis dolores, porttitor tempus nascetur id ut, integer ut dignissim harum.</p>
+	</div>
+</section>
+<section class="skills-section" id="Skills">
+	<h3 class="skills-top-name">Skills</h3>
+	<div class="skills-content">
+		<div class="skills-name">
+			<div>
+				<p id="name-html5"></p>
+			</div>
+			<div id="point-html5"></div>
+		</div>
+		<div class="skills-name">
+			<div>
+				<p id="name-css3"></p>
+			</div>
+			<div id="point-css3"></div>
+		</div>
+		<div class="skills-name">
+			<div>
+				<p id="name-js"></p>
+			</div>
+			<div id="point-JS"></div>
+		</div>
+		<div class="skills-name">
+			<div>
+				<p id="name-reactJS"></p>
+			</div>
+			<div id="point-reactJS"</div>
+		</div>
+		<div class="skills-name">
+			<div>
+				<p id="name-angularJS"></p>
+			</div>
+			<div id="point-angularJS"></div>
+		</div>
+	</div>
+</section>
+<section class="contact-section" id="Contact">
+	<h3>Contact</h3>
+	<div class="my-contacts">
+		<p>Phone number:<br>
+		<span class="contact-info">
+			+38063-26-38-656
+		</span>
+		</p>
+		<p>Email:<br>
+		<span class="contact-info">
+			r.mushchynskyi@gmail.com
+		</span>
+		</p>
+		<p>Skype:<br>
+		<span class="contact-info">
+			live:r.mushchynskyi
+		</span>
+		</p>
+	</div>
+	<div class="contact-with-me">
+		<form class="contact-form">
+			<input type="text" name="Name" placeholder="Name" id="name"></input>
+			<input type="email" name="email" placeholder="Email" id="email"></input>
+			<textarea rows="4" name="comments" placeholder="Send a mesage" id="comm"></textarea>
+			<div class="button">
+				<input type="submit" value="SEND" id="send" ></input>
+			</div>
+		</form>
+	</div>
+</section>
+<footer class="footer-section">
+	<div class="footer-contact">
+		<div class="name"><p> Mobile:<br>
+			Email:<br>
+			Skype:</p></div>
+		<div class="info"><p>+38063-26-38-656<br>
+			r.mushchynskyi@gmail.com<br>
+			live:r.mushchynskyi</p></div>
+	</div>
+	<div class="footer-logo"><i class="fa fa-code fa-4x" aria-hidden="true"></i></div>
+</footer>
+<script>
+// Выбираем вводимые значения с полей ввода
+	var nameInput = document.getElementById('name');
+	var emailInput = document.getElementById('email');
+	var commentInput = document.getElementById('comm');
+	// Задаем функцию вывода данных в консоль при нажатии на кнопку
+
+	document.querySelector('form.contact-form').addEventListener('submit', function (e) {
+
+    //prevent the normal submission of the form
+    e.preventDefault();
+	// Выводим значения в консоль
+    console.log('Name: ' + nameInput.value);
+    console.log('Email: ' + emailInput.value); 
+    console.log('comments: ' + commentInput.value);     
+	});
+//Работа с объектом
+
+	var skills = {					// Создаём объект с данными о имени навыка и его значении
+		HTML5 : { name: "HTML5", level: 8},
+		CSS3 : { name: "CSS3", level: 5},
+		JS : { name: "JavaScript", level: 10},	
+		ReactJS : { name: "ReactJS", level: 8},	
+		AngularJS : { name: "AngularJS", level: 8}	
+	}
+	//Задаем функцию обработки значения level и создаем span элементы отвечающие 
+	//за точки-маркеры
+
+	//lvl - значение левела, point - значение отвечающие за место установки элемента
+	function points_func(lvl, point) { 
+			var frag = document.createDocumentFragment();
+			for (var i = 1; i <= 10; i++) {			//10 - количество точек-маркеров
+				if (i <= lvl) {						//создаём новый элемент с заполненным значением
+					var span = document.createElement('span');
+		 			span.className = "dot dot-full";
+		  			span.innerHTML = "";
+
+					frag.appendChild(span);
+				} else {							//создаём остальные пустые точки-маркеры
+					var span = document.createElement('span');
+		 			span.className = "dot dot-empty";
+		  			span.innerHTML = "";
+
+					frag.appendChild(span);
+				}
+				document.getElementById(point).appendChild(frag); 		//добовляем новый эл-т в необоходимый тэг по id
+			}
+		
+	}
+	//Для кажого навыка вытягиваем необходиме значение и создаём его на странице 
+	//а также вызываем функцию для работы с маркерами
+	document.getElementById('name-html5').innerHTML = skills.HTML5.name;
+	var html5 = skills.HTML5.level;
+	points_func(html5, 'point-html5');
+
+	document.getElementById('name-css3').innerHTML = skills.CSS3.name;
+	var css = skills.CSS3.level;
+	points_func(css, 'point-css3');
+
+	document.getElementById('name-js').innerHTML = skills.JS.name;
+	var js = skills.JS.level;
+	points_func(js, 'point-JS');
+
+	document.getElementById('name-reactJS').innerHTML = skills.ReactJS.name;
+	var react = skills.ReactJS.level;
+	points_func(react, 'point-reactJS');
+
+	document.getElementById('name-angularJS').innerHTML = skills.AngularJS.name;
+	var ang = skills.AngularJS.level;
+	points_func(ang, 'point-angularJS');
+
+//Небольшой бонус
+//Добавил плавный скролинг к якорю
+//В задании этого не было, поэтому использовал готовый код:
+//"https://ardeya.ru/plavnaya-prokrutka-k-yakoryu-javascript-bez-jquery/"
+
+
+	// собираем все якоря; устанавливаем время анимации и количество кадров
+	const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
+	      animationTime = 300,
+	      framesCount = 20;
+
+	var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
+	    V = 0.8;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+	for (var i = 0; i < linkNav.length; i++) {
+	    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
+	        e.preventDefault(); //отменяем стандартное поведение
+	        var w = window.pageYOffset,  // производим прокрутка прокрутка
+	            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
+	        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
+	            start = null;
+	        requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+	        function step(time) {
+	            if (start === null) start = time;
+	            var progress = time - start,
+	                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+	            window.scrollTo(0,r);
+	            if (r != w + t) {
+	                requestAnimationFrame(step)
+	            } else {
+	                location.hash = hash  // URL с хэшем
+	            }
+	        }
+	    }, false);
+	}
+</script>
+</body>
+</html>
